@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" /> <title>Ejercicio 2</title>
+
+<style media="screen" type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        padding: 10px;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .bandera{
+        width: 370px;
+        height: 235px;
+        border:1px solid #ccc;
+        position: relative;
+    }
+    .box{
+        width: 45%;
+        display: inline-block;
+    }
+
+    /* espana */
+    .bandera-espana{
+        background-color: red;
+    }
+
+    .bandera-espana .bandera-espana--horizontal{
+        background-color: yellow;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        height: 110px;
+    }
+
+    /* dinamarca */
+    .bandera-dinamarca{
+        background-color: red;
+    }
+
+    .bandera-dinamarca--vertical{
+        background-color: white;
+        width: 25px;
+        position: absolute;
+        height: 100%;
+        left: 110px;
+    }
+    .bandera-dinamarca--horizontal{
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        height: 25px;
+        top: 105px;
+    }
+
+    /* emiratos arabes */
+    .bandera-emiratos-arabes--vertical{
+        background-color: red;
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .bandera-emiratos-arabes--horizontal-1{
+        background-color: green;
+        width: 100%;
+        height: 78px;
+        position: absolute;
+    }
+
+    .bandera-emiratos-arabes--horizontal-2{
+        background-color: black;
+        width: 100%;
+        height: 78px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* japon */
+    .bandera-dinamarca--circle{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        left: 130px;
+        top: 65px;
+        position: absolute;
+    }
+</style>
+
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="bandera bandera-espana">
+            <div class="bandera-espana--horizontal"></div>
+        </div>
+        <p>España</p>
+    </div>
+
+    <div class="box">
+        <div class="bandera bandera-dinamarca">
+            <div class="bandera-dinamarca--horizontal"></div>
+            <div class="bandera-dinamarca--vertical"></div>
+        </div>
+        <p>Dinamarca</p>
+    </div>
+
+    <div class="box">
+        <div class="bandera bandera-emiratos-arabes">
+            <div class="bandera-emiratos-arabes--vertical"></div>
+            <div class="bandera-emiratos-arabes--horizontal-1"></div>
+            <div class="bandera-emiratos-arabes--horizontal-2"></div>
+        </div>
+        <p>Emiratos Arabes</p>
+    </div>
+
+    <div class="box">
+        <div class="bandera bandera-japon">
+            <div class="bandera-dinamarca--circle"></div>
+        </div>
+        <p>Japón</p>
+    </div>
+
+</body>
+</html>
